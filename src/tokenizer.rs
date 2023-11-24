@@ -627,7 +627,7 @@ fn get_plain_reserved_token(input: &str) -> IResult<&str, Token<'_>> {
                     terminated(tag("ENGINE_TYPE"), end_of_word),
                     terminated(tag("ESCAPE"), end_of_word),
                     terminated(tag("ESCAPED"), end_of_word),
-                    terminated(tag("EVENTS"), end_of_word),
+                    // terminated(tag("EVENTS"), end_of_word),
                     terminated(tag("EXEC"), end_of_word),
                     terminated(tag("EXECUTE"), end_of_word),
                     terminated(tag("EXISTS"), end_of_word),
